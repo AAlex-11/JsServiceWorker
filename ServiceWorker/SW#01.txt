@@ -1,0 +1,27 @@
+Service workers run in a separate thread and process (or context) from the web page.
+They have their own lifecycle and event model.
+It's not traditional multi-threading like Web Workers because they have a separate execution context and manage their own events and lifecycles.
+They can enhance user experience by caching and enabling background tasks without blocking the main thread and preventing memory leaks,
+ensuring smooth and responsive user interface interactions. They exist independent of web page, even when page is closed.
+They can receive push notifications. They can perform background fetch, background synchronization and other background operations.
+
+app.js loaded! SW03.js:1:9
+DOM fully loaded and parsed
+
+ServiceWorkerRegistration { installing: ServiceWorker, waiting: null, active: null, navigationPreload: NavigationPreloadManager, scope: "http://localhost:8080/", updateViaCache: "imports", onupdatefound: null, pushManager: PushManager }
+​
+active: ServiceWorker { scriptURL: "http://localhost:8080/SW02.js", state: "activated", onstatechange: null, … }
+​
+installing: null
+​
+navigationPreload: NavigationPreloadManager {  }
+​
+onupdatefound: null
+​
+pushManager: PushManager {  }
+​
+scope: "http://localhost:8080/"
+​
+updateViaCache: "imports"
+​
+waiting: null

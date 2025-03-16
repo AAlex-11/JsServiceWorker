@@ -1,0 +1,5 @@
+Service Worker File
+The install event sets up the cache. The fetch event intercepts network requests.
+
+
+
